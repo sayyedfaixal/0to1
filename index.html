@@ -46,16 +46,16 @@
 <div class="navigation" style="position: absolute !important;">
     <div class="toggle"></div>
     <ul>
-        <li>
+        <li onclick="call()">
             <a href="javascript:introJs().setOption('showProgress', true).start();">
-                <span class="icon"><i class="fa fa-b    ook" aria-hidden="true"></i></span>
-                <span class="title" onclick="call()">Website Tour</span>
+                <span class="icon" ><i class="fa fa-book" aria-hidden="true"></i></span>
+                <span class="title" >Website Tour</span>
             </a>
         </li>
-        <li>
+        <li class="dffloatbutton">
             <a href="#">
                 <span class="icon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
-                <span class="title">Support Chatbot</span>
+                <span class="title " >Support Chatbot</span>
             </a>
         </li>
         <li>
@@ -144,7 +144,7 @@
 
         <!-- Profile icon -->
         <li class="nav-item dropdown no-arrow">
-            <a class="nav-link dropdown-toggle" href="#" id="av" role="button"
+            <a class="nav-link dropdown-toggle userprofile" href="#" id="av" role="button"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-user-circle fa-fw"></i>
             </a>
@@ -798,7 +798,9 @@
 </a> -->
 
 <!-- Chatbot -->
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<div class="dfchatbot">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
         intent="WELCOME"
         chat-title="konnect"
@@ -815,6 +817,7 @@
      --df-messenger-user-message: #479b3d;
     }
   </style>
+</div>
 <!-- ChatBot ends -->
 
 <!-- Logout Modal-->
